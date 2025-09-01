@@ -12,14 +12,26 @@
 // to match your app's branding.
 // Tip: Use the "Theme Builder" on Quasar's documentation website.
 
-$primary   : #1976D2;
-$secondary : #26A69A;
-$accent    : #9C27B0;
+// app global css in SCSS form
+// Defina suas variáveis de cores
+$bg1: #0f172a;
+$bg2: #111827;
+$panel: #0b1220;
+$muted: #94a3b8;
+$text: #e5e7eb;
+$accent: #22c55e;
+$accent2: #10b981;
+$danger: #ef4444;
+$warn: #f59e0b;
+$link: #60a5fa;
 
-$dark      : #1D1D1D;
-$dark-page : #121212;
+// Aplicar tema escuro
+body.body--dark {
+  background: linear-gradient(135deg, $bg1 0%, $bg2 60%, #030712 100%);
+  color: $text;
+}
 
-$positive  : #21BA45;
-$negative  : #C10015;
-$info      : #31CCEC;
-$warning   : #F2C037;
+// Estilização global
+.q-page {
+  padding: 20px;
+}

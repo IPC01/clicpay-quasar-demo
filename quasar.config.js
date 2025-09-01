@@ -39,6 +39,11 @@ export default defineConfig((/* ctx */) => {
         browser: [ 'es2022', 'firefox115', 'chrome115', 'safari14' ],
         node: 'node20'
       },
+        env: {
+    MPESA_WALLET: process.env.MPESA_WALLET ,
+    EMOLA_WALLET: process.env.EMOLA_WALLET ,
+    CLICPAY_TOKEN: process.env.CLICPAY_TOKEN 
+  },
 
       vueRouterMode: 'hash', // available values: 'hash', 'history'
       // vueRouterBase,
@@ -133,6 +138,8 @@ export default defineConfig((/* ctx */) => {
       // pwaExtendGenerateSWOptions (cfg) {},
       // pwaExtendInjectManifestOptions (cfg) {}
     },
+
+    // quasar.conf.js
 
     // https://v2.quasar.dev/quasar-cli-vite/developing-pwa/configuring-pwa
     pwa: {
